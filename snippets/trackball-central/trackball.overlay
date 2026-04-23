@@ -26,6 +26,6 @@
         layers = <2>;
         input-processors = 
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 16>;
+            <&zip_scroll_scaler 1 5>;
     };
 };

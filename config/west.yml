@@ -8,6 +8,10 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: 4mplelab
       url-base: https://github.com/4mplelab
+    - name: kot149
+      url-base: https://github.com/kot149
+    - name: ssbb
+      url-base: https://github.com/ssbb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,5 +26,11 @@ manifest:
     - name: zmk-feature-charge-indicator
       remote: 4mplelab
       revision: main
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
+    - name: zmk-listeners
+      remote: ssbb
+      revision: v1
   self:
     path: config
