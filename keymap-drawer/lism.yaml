@@ -295,12 +295,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bat_print'
-  - Boot
+  - {t: Boot, type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   lowdpi:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -488,7 +488,7 @@ layers:
   - F4
   - F5
   - F6
-  - {t: ▽, type: trans}
+  - VOL UP
   - (LS(4))
   - (LEFT BRACKET)
   - (LS(8))
@@ -498,7 +498,7 @@ layers:
   - F1
   - F2
   - F3
-  - {t: ▽, type: trans}
+  - VOL DN
   - (LS(INTERNATIONAL 3))
   - (LS(INTERNATIONAL 1))
   - (MINUS)
@@ -509,9 +509,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOLUME UP
+  - {t: ▽, type: trans}
   - (INTERNATIONAL 1)
-  - VOL DN
+  - {t: ▽, type: trans}
   - (LS(NON US HASH))
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -539,7 +539,7 @@ combos:
 - p: [6, 7, 8]
   k: KP 0
   l: ['9', '10']
-- p: [24, 25]
+- p: [35, 36]
   k: Boot
 - p: [18, 17, 16, 19]
   k: Alt+Ctl+TAB
@@ -547,7 +547,7 @@ combos:
   k: Gui+UP ARROW
 - p: [26, 27, 28]
   k: Gui+↓
-- p: [24, 13]
+- p: [24, 14]
   k: MUTE
   l: [1_placeholder]
 - p: [27, 26]
@@ -565,3 +565,5 @@ combos:
   k: F5
 - p: [37, 16, 17, 18]
   k: F5
+- p: [37, 36]
+  k: BT
