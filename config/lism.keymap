@@ -55,26 +55,8 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 3000000>; };
 &zip_temp_layer { require-prior-idle-ms = <200>; };
 
+
 / {
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        layer_10_gesture {
-            layers = <10>;
-            bindings = <&mouse_gesture_on>, <&mouse_gesture_off>;
-        };
-
-        arrow_layer_gesture {
-            layers = <9>;
-            bindings = <&mouse_gesture_on>, <&l3_exit>;
-        };
-
-        mouse_layer_gesture {
-            layers = <4>;
-            bindings = <&mouse_gesture_on>, <&mouse_gesture_off>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -149,7 +131,7 @@
     alt_tab: alt_tab { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&kp TAB>; };
     alt_shift_tab: alt_shift_tab { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&kp LS(TAB)>; };
     release_alt: release_alt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release>, <&kp LALT>; };
-    l3_exit: l3_exit { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&mouse_gesture_off &release_alt>; };
+    l3_exit: l3_exit { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&release_alt>; };
 
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -363,22 +345,5 @@
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
-    };
-};
-
-&central_listener {
-    layer-7 {
-        layers = <7>;
-        input-processors = <&zip_mouse_gesture>, <&zip_xy_scaler 1 5>;
-    };
-
-    layer-9 {
-        layers = <9>;
-        input-processors = <&zip_mouse_gesture_l3>, <&zip_xy_scaler 1 1>;
-    };
-
-    layer-10 {
-        layers = <10>;
-        input-processors = <&zip_mouse_gesture_l2>, <&zip_xy_scaler 1 1>;
     };
 };

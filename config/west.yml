@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/4mplelab
     - name: kot149
       url-base: https://github.com/kot149
-    - name: ssbb
-      url-base: https://github.com/ssbb
+    - name: eintim
+      url-base: https://github.com/eintim
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,8 +29,8 @@ manifest:
     - name: zmk-mouse-gesture
       remote: kot149
       revision: v1
-    - name: zmk-listeners
-      remote: ssbb
-      revision: v1
+    - name: zmk-behavior-battery-typer
+      remote: eintim
+      revision: main
   self:
     path: config

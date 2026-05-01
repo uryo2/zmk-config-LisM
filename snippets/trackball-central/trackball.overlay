@@ -28,4 +28,19 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 5>;
     };
+
+    layer-7 {
+        layers = <7>;
+        input-processors = <&zip_mouse_gesture>, <&zip_xy_scaler 1 5>;
+    };
+
+    layer-9 {
+        layers = <9>;
+        input-processors = <&zip_mouse_gesture_l3>, <&zip_xy_scaler 1 1>;
+    };
+
+    layer-10 {
+        layers = <10>;
+        input-processors = <&zip_mouse_gesture_l2>, <&zip_xy_scaler 1 1>;
+    };
 };
