@@ -284,7 +284,7 @@ layers:
   - '2'
   - '3'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&tog_off 6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,8 +295,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bat_print'
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
@@ -564,4 +564,4 @@ combos:
 - p: [37, 16, 17, 18]
   k: F5
 - p: [37, 36]
-  k: BT
+  k: {t: BT, h: toggle}
