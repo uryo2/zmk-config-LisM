@@ -31,18 +31,18 @@ layers:
   - {t: ',', h: (LS(7))}
   - {t: ., h: (SEMICOLON)}
   - QUESTION
-  - LEFT CONTROL
+  - FUNCTION
   - LEFT COMMAND
   - LEFT ALT
   - {t: '`', h: '9'}
   - {t: SPACE, h: LEFT CONTROL}
-  - Sft+Gui+S
-  - {t: '&parenthesisJP', h: '&doubledoublequote'}
-  - {t: ESC, h: BT}
+  - {t: INTERNATIONAL 4, h: LEFT SHIFT}
   - BS
   - {t: ENTER, h: ARROW_symbolsBU}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESCAPE
   - lowdpi
-  - FUNCTION
   1_placeholder:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -382,9 +382,9 @@ layers:
   - FUNCTION
   - (INTERNATIONAL 1)
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '9':
@@ -468,9 +468,9 @@ layers:
   - FUNCTION
   - KP NLCK
   - KP NUMLOCK
-  - (LS(MINUS))
+  - {t: (LS(MINUS)), type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUNCTION:
@@ -504,7 +504,7 @@ layers:
   - (MINUS)
   - (LS(RIGHT BRACKET))
   - (LS(1))
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -515,7 +515,7 @@ layers:
   - (LS(NON US HASH))
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: TAB
