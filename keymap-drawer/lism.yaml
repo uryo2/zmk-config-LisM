@@ -192,7 +192,7 @@ layers:
   - '&mkp MB1'
   - '&kp_exit_AML K'
   - {t: L, h: '5'}
-  - {t: (LS(MINUS)), h: RIGHT SHIFT}
+  - {t: '&kp_exit_AML (SQT)', h: '&mo_exit_AML 1'}
   - {t: '&kp_exit_AML Z', h: LSHIFT}
   - {t: '&kp_exit_AML X', h: Ctl+X}
   - {t: '&kp_exit_AML C', h: Ctl+C}
@@ -202,19 +202,19 @@ layers:
   - '&kp_exit_AML M'
   - {t: '&kp_exit_AML COMMA', h: (LS(7))}
   - {t: '&kp_exit_AML DOT', h: (SEMICOLON)}
-  - '&kp_exit_AML QUESTION'
-  - LEFT CONTROL
+  - {t: '&kp_exit_AML SLASH', h: RIGHT SHIFT}
+  - FUNCTION
   - LEFT COMMAND
   - LEFT ALT
   - {t: '&kp_exit_AML GRAVE', h: '&mo_exit_AML 9'}
   - {t: '&kp_exit_AML SPACE', h: LEFT CONTROL}
-  - Sft+Gui+S
-  - {t: '&parenthesisJP', h: '&doubledoublequote'}
-  - {t: ESC, h: BT}
+  - {t: INTERNATIONAL 4, h: LEFT SHIFT}
   - BS
   - {t: ENTER, h: ARROW_symbolsBU}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&kp_exit_AML ESCAPE'
   - lowdpi
-  - {t: '&kp_exit_AML INT_HENKAN', h: '&mo_exit_AML 11'}
   '5':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -296,7 +296,7 @@ layers:
   - {t: ▽, type: trans}
   - '&bat_print'
   - Boot
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
   - {t: ▽, type: trans}
