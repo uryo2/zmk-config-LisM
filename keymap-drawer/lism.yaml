@@ -295,11 +295,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bat_print'
-  - {t: Boot, type: held}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - BT CLR ALL
   lowdpi:
   - {t: ▽, type: trans}
