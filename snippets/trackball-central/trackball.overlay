@@ -24,10 +24,13 @@
         <&zip_temp_layer 4 3000000>;  // トラックボール移動でMOUSEレイヤー(4)を自動起動
 
     scroller {
-        layers = <2>;
-        input-processors = 
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 5>;
+        layers = <5>;  // Layer 5 = SCROLL
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,       // X軸とY軸の入れ替え
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,      // X軸反転
+            <&zip_xy_to_scroll_mapper>,                        // スクロールモードに変更
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,  // スクロールのX軸反転
+            <&zip_scroll_scaler 1 5>;                          // スクロール量を1/5倍
     };
 
     layer-7 {
