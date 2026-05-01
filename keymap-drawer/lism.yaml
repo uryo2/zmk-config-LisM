@@ -41,7 +41,7 @@ layers:
   - {t: ENTER, h: ARROW_symbolsBU}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ESCAPE
+  - {t: ESCAPE, h: BT}
   - lowdpi
   1_placeholder:
   - {t: ▽, type: trans}
@@ -213,7 +213,7 @@ layers:
   - {t: ENTER, h: ARROW_symbolsBU}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp_exit_AML ESCAPE'
+  - {t: ESCAPE, h: '&mo_exit_AML 6'}
   - lowdpi
   '5':
   - {t: ▽, type: trans}
@@ -299,7 +299,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - {t: '&studio_unlock', type: held}
   - BT CLR ALL
   lowdpi:
   - {t: ▽, type: trans}
@@ -563,5 +563,3 @@ combos:
   k: F5
 - p: [37, 16, 17, 18]
   k: F5
-- p: [37, 36]
-  k: {t: BT, h: toggle}
