@@ -28,6 +28,7 @@
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,  // マウスと同じ向きに合わせる
             <&zip_xy_to_scroll_mapper>,                        // スクロールモードに変更
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,  // 縦スクロール反転
             <&zip_scroll_scaler 1 5>;                          // スクロール量を1/5倍
     };
 
