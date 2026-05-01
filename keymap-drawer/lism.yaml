@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - {t: L, h: '5'}
-  - {t: (LS(MINUS)), h: RIGHT SHIFT}
+  - {t: (SQT), h: 1_placeholder}
   - {t: Z, h: LEFT SHIFT}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
@@ -30,7 +30,7 @@ layers:
   - M
   - {t: ',', h: (LS(7))}
   - {t: ., h: (SEMICOLON)}
-  - QUESTION
+  - {t: /, h: RIGHT SHIFT}
   - FUNCTION
   - LEFT COMMAND
   - LEFT ALT
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
