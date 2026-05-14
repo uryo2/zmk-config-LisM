@@ -1,9 +1,9 @@
 #include "lism.dtsi"
 
 &transform_42keymap {
-    col-offset = <5>;
+    col-offset = <6>;
 };
 
 &transform_40keymap {
-    col-offset = <5>;
+    col-offset = <6>;
 };
