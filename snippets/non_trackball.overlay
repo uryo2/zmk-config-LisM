@@ -4,6 +4,8 @@
 
 &spi0 {
     status = "disabled";
+    pinctrl-0 = <>;
+    pinctrl-1 = <>;
 };
 
 // 物理ピン
