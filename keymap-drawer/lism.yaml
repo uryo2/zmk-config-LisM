@@ -34,7 +34,7 @@ layers:
   - FUNCTION
   - LEFT COMMAND
   - LEFT ALT
-  - {t: '`', h: '9'}
+  - A
   - {t: SPACE, h: LEFT CONTROL}
   - {t: INTERNATIONAL 4, h: LEFT SHIFT}
   - BS
@@ -420,12 +420,12 @@ layers:
   - KP 3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '9', type: held}
+  - {type: held}
+  - '9'
   - '10'
   - FUNCTION
   - KP NUMLOCK
-  - (LS(MINUS))
+  - {t: (LS(MINUS)), type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
